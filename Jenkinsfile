@@ -12,12 +12,7 @@ node {
 
         app = docker.build("sampathreddy1201/nodeapp")
     }
-	stage('Test image') {
-        
-        app.inside {
-            echo "Tests passed"
-        }
-    }
+	
 
 
     stage('Push image') {
